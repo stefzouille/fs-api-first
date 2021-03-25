@@ -9,12 +9,14 @@ const op = readlineSync.question(chalk.yellow(`click enter to see the txt and co
 
 fs.copyFileSync('blabla.txt', 'text.txt')
 fs.copyFileSync('blabla.txt', 'text.md')
+fs.copyFileSync('blabla.txt', 'text.js')
 
 console.log(chalk.red(txt, op))
 
 
 const startUsage = process.cpuUsage();
 const now = Date.now();
+
 while (Date.now() - now < 500);
 
 console.log(process.cpuUsage(startUsage));
